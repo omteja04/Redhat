@@ -16,7 +16,7 @@
 
 **Node 1**
 
-- [ ] Hostname
+- [ ] **Hostname**
 
 ```bash
 
@@ -27,7 +27,7 @@ hostname ctl set-hostname serverb.lab.example.com
 hostname
 ```
 
-- [ ] IP Address
+- [ ] **IP Address**
 
 ```bash
 # To see the connection
@@ -46,7 +46,7 @@ ping 172.25.250.11
 
 ```
 
-- [ ] Repos
+- [ ] **Repos**
 
 ```bash
 vim /etc/yum.repos.d/app.repo
@@ -86,7 +86,7 @@ yum install vim -y
 
 ```
 
-- [ ] Configure webserver
+- [ ] **Configure webserver**
 
 ```bash
 # To see the name
@@ -150,7 +150,7 @@ curl 172.25.250.11:82/file1
 # Desired Output
 ```
 
-- [ ] Users and groups management
+- [ ] **Users and groups management**
 
 ```bash
 # Create a group
@@ -178,7 +178,7 @@ tail /etc/shadow
 
 ```
 
-- [ ] Create a directory and assign the basic permissions
+- [ ] **Create a directory and assign the basic permissions**
 
 ```bash
 mkdir -p /common/admin
@@ -191,7 +191,7 @@ ls -ld /common/admin
 
 ```
 
-- [ ] Configure the auto filesystem
+- [ ] **Configure the auto filesystem**
 
 ```bash
 
@@ -226,7 +226,7 @@ exit
 
 ```
 
-- [ ] Configure crontab
+- [ ] **Configure crontab**
 
 ```bash
 crontab -eu harry
@@ -242,7 +242,7 @@ systemctl restart crond
 crontab -lu harry
 ```
 
-- [ ] NTP configuration
+- [ ] **NTP configuration**
 
 ```bash
 systemctl start chronyd
@@ -264,7 +264,7 @@ timedatectl
 # (Use this command if ntp is not showing yes)
 ```
 
-- [ ] find the owner of the file
+- [ ] **find the owner of the file**
 
 ```bash
 
@@ -276,19 +276,19 @@ ls -a /root/find.user
 
 ```
 
-- [ ] grep the "home" string from /etc/passwd
+- [ ] **grep the "home" string from /etc/passwd**
 
 ```bash
 grep home /etc/passwd >> /root/mysearch.txt
 ```
 
-- [ ] Create a user account with UID 1326
+- [ ] **Create a user account with UID 1326**
 
 ```bash
 useradd -u 1326 alies
 ```
 
-- [ ] Backup the /var/tmp as /root/test.tar.gz
+- [ ] **Backup the /var/tmp as /root/test.tar.gz**
 
 ```bash
 
@@ -300,7 +300,7 @@ tar -jcvf /root/test.tar.bz2 /var/tmp
 
 ```
 
-- [ ] [Set the Permission](https://github.com/omteja04/Redhat/blob/main/Umask.md)
+- [ ] [**Set the Permission**](https://github.com/omteja04/Redhat/blob/main/Umask.md)
 
 ```bash
 # a) All new creating files for user natasha as -r-------- as default permission.
@@ -318,7 +318,7 @@ source .bash_profile
 
 ```
 
-- [ ] Password Expiry
+- [ ] **Password Expiry**
 
 ```bash
 vim /etc/login.defs
@@ -335,7 +335,7 @@ PASS_MAX_DAYS 20
 init 6
 ```
 
-- [ ] Assign Sudo Privilege
+- [ ] **Assign Sudo Privilege**
 
 ```bash
 vim /etc/sudoers
@@ -345,7 +345,7 @@ vim /etc/sudoers
 %admin ALL=(ALL)  NOPASSWD: ALL
 ```
 
-- [ ] Configure the application
+- [ ] **Configure the application**
 
 ```bash
 su - alies
@@ -363,7 +363,7 @@ echo $RHCSA
 source .bash_profile
 ```
 
-- [ ] Create the script file
+- [ ] **Create the script file**
 
 ```bash
 
